@@ -1,13 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import About from "./About";
+import Work from "./Work";
+import HireMe from "./HireMe";
 
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-gray-100  flex items-center justify-between py-5  px-20">
+    <div>
+<section className="min-h-screen bg-gray-100  flex items-center justify-between py-5  px-24">
       
       {/* Left Content */}
-      <div className="w-1/2  space-y-6">
+      <div className="w-1/2   space-y-6">
         
         {/* Tag */}
     <span className="relative bg-pink-500 text-white px-6 py-2 text-sm font-semibold rounded-full inline-block">
@@ -78,8 +82,23 @@ const Home = () => {
       </div>
 
 
+    </section>
+    <section id="about"><About/></section>
+    <section id="work" className="min-h-screen px-20 py-10">
+        <Work />
+      </section>
+
+      {/* ✅ HIRE ME SECTION */}
+      <section id="hireme" className="min-h-screen px-20 py-10">
+        <HireMe />
+      </section>
     </div>
+    
   );
 };
 
 export default Home;
+
+
+
+
