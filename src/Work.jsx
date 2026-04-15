@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import mycookifyImg from "../src/images/MyCookify.png";
-import recipeImg from "../src/images/RecipeFinder.png";
+import recipeImg from "../src/images/Recipefinder.png";
 import githubImg from "../src/images/GithubFinder.png";
-const projects = [
+const projects = [git add .
   {
     title: "MyCookify",
     desc: "A modern recipe web app to discover, create, and save recipes with a smooth user experience",
