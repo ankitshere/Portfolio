@@ -32,7 +32,7 @@ const HireMe = () => {
         <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-blue-600 via-purple-900 to-sky-100 underline">
           Get In Touch
         </h2>
-        <p className="text-gray-500 mt-2 text-lg">
+        <p className="text-gray-600 mt-2 text-lg">
           I’m open to freelance & full-time opportunities.
         </p>
       </div>
@@ -40,13 +40,13 @@ const HireMe = () => {
       <div className="grid md:grid-cols-2 ">
         
         {/* LEFT */}
-        <div className="space-y-2">
+        <div className="md:space-y-2  space-y-5 ">
           <h3 className="text-2xl font-medium">Contact Information</h3>
 
-          <div className="space-y-2 text-gray-600">
-            <p>
+          <div className="md:space-y-2 space-y-5 md:text-gray-600 text-gray-800 font-semibold ">
+            <p >
               Email <br />
-              <span className="text-black font-medium">
+              <span className="text-black  font-medium">
                 ✉️ ankityadavpvs@gmail.com
               </span>
             </p>
@@ -60,7 +60,7 @@ const HireMe = () => {
           </div>
 
           <div>
-            <p className=" text-gray-600  ">Social</p>
+            <p className=" md:text-gray-600 text-gray-800 font-semibold   ">Social</p>
              <div className="flex gap-6 ">
           
          <a href="https://www.linkedin.com/in/ankit-webdev/" target="_blank" rel="noreferrer"
@@ -82,7 +82,7 @@ const HireMe = () => {
         </div>
 
         {/* RIGHT (FORM) */}
-        <div className="bg-white p-8 rounded-2xl border border-blue-700  shadow-sm">
+        <div className="bg-white p-8 rounded-2xl border border-blue-700 mt-15 md:mt-0  shadow-sm">
           <form onSubmit={handleSubmit} className="space-y-6">
 
             <div>

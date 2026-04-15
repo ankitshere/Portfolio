@@ -10,11 +10,11 @@ const Home = () => {
 <section className="min-h-screen  bg-gray-100 flex flex-col-reverse md:flex-row md:mt-5  items-center justify-center md:justify-between px-6 md:px-22 text-center md:text-left py-5  ">
       
       {/* Left Content */}
-      <div className="w-full md:w-1/2    space-y-6">
+      <div className="w-full md:w-1/2 -mt-10 mb-10  md:mt-15   space-y-6">
         
         {/* Tag */}
-    <span className="relative bg-pink-500 text-white px-6 py-2 text-sm font-semibold rounded-full inline-block">
-  Hello I'm
+    <span className="relative bg-pink-600 text-white px-6  py-2 text-sm font-semibold rounded-full inline-block">
+    👋 Hello I'm 
 
   {/* Tail (point) */}
  
@@ -25,12 +25,12 @@ const Home = () => {
         </h1>
 
       
-        <h2 className="text-xl  -mt-3 font-semibold">
+        <h2 className="text-2xl  -mt-3 font-bold">
            Frontend Web Developer
         </h2>
 
        
-        <div className="space-y-2 font-semibold ">
+        <div className="space-y-2  font-semibold ">
           <p><i class="ri-phone-fill"></i> &nbsp;+91 9369941973</p>
           <p><i class="ri-mail-ai-fill"></i> &nbsp;  ankityadavpvs@gmail.com</p>
           <p><i class="ri-map-pin-2-fill"></i>  &nbsp; Lucknow ,Uttar Pradesh  India</p>
@@ -73,7 +73,7 @@ const Home = () => {
 
       {/* Right Image */}
 
-      <div className="md:relative relative   mb-10">
+      <div className="md:relative relative   mb-20">
         <div className="md:w-[350px] md:h-[350px] w-[300px] h-[300px] rounded-full bg-gray-200 flex items-center justify-center">
           <div className="md:w-[300px] md:h-[300px]  w-[250px] h-[250px] rounded-full bg-gray-300 flex items-center justify-center overflow-hidden">
             
