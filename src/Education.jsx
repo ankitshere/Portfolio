@@ -50,7 +50,7 @@ const Education = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="min-h-screen bg-white py-20 px-6">
+    <section ref={sectionRef} className="min-h-screen  py-20 px-6">
 
       {/* Heading */}
       <div className="text-center mb-16">
@@ -68,7 +68,7 @@ const Education = () => {
         {educationData.map((item, index) => (
           <div
             key={index}
-            className="edu-card bg-gray-50 border border-rose-300 rounded-2xl p-6 transition duration-300 hover:shadow-md hover:-translate-y-1"
+            className="edu-card bg-white border border-rose-300 rounded-2xl p-6 transition duration-300 hover:shadow-md hover:-translate-y-1"
           >
             
             {/* Top */}

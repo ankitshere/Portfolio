@@ -5,7 +5,7 @@ import MainRoutes from './routes/MainRoutes';
 const App = () => {
   return (
 
-    <div>
+    <div className='bg-slate-50'>  
      
       <Nav/>
       <MainRoutes/>

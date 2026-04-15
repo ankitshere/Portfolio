@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import About from "./About";
 import Work from "./Work";
 import HireMe from "./HireMe";
-
+import Profileimg from "../src/images/Profileimg.jpeg";
 
 const Home = () => {
   return (
@@ -40,14 +40,15 @@ const Home = () => {
        
         <div className="flex gap-6 text-xl mt-4">
           
-         <a href="https://www.linkedin.com/in/ankit-webdev/" target="_blank" rel="noreferrer">
-    <i className="ri-linkedin-box-fill text-2xl hover:scale-110 transition"></i>
+         <a href="https://www.linkedin.com/in/ankit-webdev/" target="_blank" rel="noreferrer"
+          className="text-2xl  hover:scale-140 transition-all duration-300">
+    <i className="ri-linkedin-box-fill"></i>
   </a>
         <a
   href="https://github.com/ankitshere"
   target="_blank"
   rel="noopener noreferrer"
-  className="text-2xl text-gray-700 hover:text-black hover:scale-110 transition-all duration-300"
+  className="text-2xl  hover:scale-140 transition-all duration-300"
 >
   <i className="ri-github-fill"></i>
 </a>
@@ -55,7 +56,7 @@ const Home = () => {
   href="https://x.com/ankityadav15885"
   target="_blank"
   rel="noopener noreferrer"
-  className="text-2xl text-gray-700 hover:text-black hover:scale-110 transition-all duration-300"
+  className="text-2xl  hover:scale-140 transition-all duration-300"
 >
  <i class="ri-twitter-x-line"></i>
 </a>
@@ -69,9 +70,9 @@ const Home = () => {
           <div className="w-[300px] h-[300px] rounded-full bg-gray-300 flex items-center justify-center overflow-hidden">
             
             {/* Replace with your image */}
-            <div className="w-[260px] h-[260px] rounded-full bg-red-900 flex items-center justify-center overflow-hidden">
+            <div className="w-[260px] h-[260px] rounded-full  flex items-center justify-center overflow-hidden">
             
-            <img src="https://images.unsplash.com/photo-1581382575275-97901c2635b7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVufGVufDB8fDB8fHww" alt="" />
+            <img src={Profileimg} alt="" />
             {/* Replace with your image */}
            
 
@@ -84,12 +85,12 @@ const Home = () => {
 
     </section>
     <section id="about"><About/></section>
-    <section id="work" className="min-h-screen px-20 py-10">
+    <section id="work" className="min-h-screen">
         <Work />
       </section>
 
       {/* ✅ HIRE ME SECTION */}
-      <section id="hireme" className="min-h-screen px-20 py-10">
+      <section id="hireme" className="min-h-screen  ">
         <HireMe />
       </section>
     </div>
