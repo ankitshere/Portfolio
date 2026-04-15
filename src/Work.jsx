@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import mycookifyImg from "../images/MyCookify.png";
-import recipeImg from "../images/Recipefinder.png";
-import githubImg from "../images/GithubFinder.png";
+import mycookifyImg from "../src/images/MyCookify.png";
+import recipeImg from "../src/images/Recipefinder.png";
+import githubImg from "../src/images/GithubFinder.png";
 const projects = [
   {
     title: "MyCookify",
