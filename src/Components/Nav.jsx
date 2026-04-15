@@ -1,16 +1,18 @@
-
 import { useNavigate, useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 
 const Nav = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleNav = (path) => {
     navigate(path);
+    setMenuOpen(false); // close menu on click
   };
 
-  // 🔥 Auto scroll when URL changes
+  // 🔥 Auto scroll
   useEffect(() => {
     const id = location.pathname.replace("/", "") || "home";
     document.getElementById(id)?.scrollIntoView({
@@ -18,65 +20,75 @@ const Nav = () => {
     });
   }, [location]);
 
-  // 🔥 Active check (NavLink jaisa)
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="flex items-center justify-between px-10 py-5">
-      
-      <h1 className='text-3xl font-bold px-8'>
-        Ankit's <span className='font-light text-2xl text-gray-500'>Portfolio</span>
-      </h1>
+    <nav className="w-full bg-transparent fixed top-0 left-0 z-50">
+      <div className="flex items-center justify-between px-6 md:px-10 py-4">
 
-      <div className='flex gap-10 px-15 text-lg font-medium'>
+        {/* Logo */}
+        <h1 className="text-2xl md:text-3xl font-bold">
+          Ankit's{" "}
+          <span className="font-light text-gray-500 text-xl">
+            Portfolio
+          </span>
+        </h1>
 
-        <button
-          onClick={() => handleNav("/")}
-          className={`pb-1 transition ${
-            isActive("/")
-              ? "text-blue-500 border-b-2 border-blue-500"
-              : "hover:text-blue-400"
-          }`}
-        >
-          Home
-        </button>
+        {/* Desktop Menu */}
+        <div className="hidden md:flex gap-10 text-lg font-medium">
 
-        <button
-          onClick={() => handleNav("/about")}
-          className={`pb-1 transition ${
-            isActive("/about")
-              ? "text-blue-500 border-b-2 border-blue-500"
-              : "hover:text-blue-400"
-          }`}
-        >
-          About
-        </button>
+          {["/", "/about", "/work", "/hireme"].map((path, i) => {
+            const labels = ["Home", "About", "Work", "Hire Me"];
 
-        <button
-          onClick={() => handleNav("/work")}
-          className={`pb-1 transition ${
-            isActive("/work")
-              ? "text-blue-500 border-b-2 border-blue-500"
-              : "hover:text-blue-400"
-          }`}
-        >
-          Work
-        </button>
-       
+            return (
+              <button
+                key={i}
+                onClick={() => handleNav(path)}
+                className={`pb-1 transition ${
+                  isActive(path)
+                    ? "text-blue-500 border-b-2 border-blue-500"
+                    : "hover:text-blue-400"
+                }`}
+              >
+                {labels[i]}
+              </button>
+            );
+          })}
+        </div>
 
-        <button
-          onClick={() => handleNav("/hireme")}
-          className={`pb-1 transition ${
-            isActive("/hireme")
-              ? "text-blue-500 border-b-2 border-blue-500"
-              : "hover:text-blue-400"
-          }`}
-        >
-          Hire Me
-        </button>
-
+        {/* Mobile Menu Icon */}
+        <div className="md:hidden text-2xl">
+          {menuOpen ? (
+            <RiCloseLine onClick={() => setMenuOpen(false)} />
+          ) : (
+            <RiMenu3Line onClick={() => setMenuOpen(true)} />
+          )}
+        </div>
       </div>
 
+      {/* Mobile Dropdown */}
+      {menuOpen && (
+        <div className="md:hidden flex flex-col items-center gap-6 py-6 bg-transparent shadow-lg text-lg font-medium">
+
+          {["/", "/about", "/work", "/hireme"].map((path, i) => {
+            const labels = ["Home", "About", "Work", "Hire Me"];
+
+            return (
+              <button
+                key={i}
+                onClick={() => handleNav(path)}
+                className={`transition ${
+                  isActive(path)
+                    ? "text-blue-500 underline"
+                    : "hover:text-blue-400"
+                }`}
+              >
+                {labels[i]}
+              </button>
+            );
+          })}
+        </div>
+      )}
     </nav>
   );
 };

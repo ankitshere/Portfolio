@@ -51,7 +51,7 @@ const TechStack = () => {
   const [hovered, setHovered] = useState(null);
 
   return (
-    <section className="mt-10 py-16 px-6 max-w-6xl mx-auto text-center">
+    <section className=" py-30  bg-gray-100  px-6 max-w-6xl mx-auto text-center">
       
       <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-pink-200 via-purple-900 to-sky-100 mb-14">
     🛠️ Technologies 

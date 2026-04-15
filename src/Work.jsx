@@ -141,7 +141,7 @@ const Work = () => {
 
     //   </div>
     // </section>
-    <section className="min-h-screen bg-[#f8fafc]  text-black px-6 md:px-20 py-24">
+    <section className="min-h-screen bg-gray-100  text-black px-6 md:px-20 py-24">
 
       {/* Heading */}
       <div className="mb-15">

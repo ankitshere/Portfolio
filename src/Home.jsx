@@ -8,10 +8,10 @@ import Profileimg from "../src/images/Profileimg.jpeg";
 const Home = () => {
   return (
     <div>
-<section className="min-h-screen bg-gray-100  flex items-center justify-between py-5  px-24">
+<section className="min-h-screen bg-gray-100 flex flex-col-reverse md:flex-row items-center justify-center md:justify-between px-6 md:px-24 text-center md:text-left py-5  ">
       
       {/* Left Content */}
-      <div className="w-1/2   space-y-6">
+      <div className="w-full md:w-1/2  space-y-6">
         
         {/* Tag */}
     <span className="relative bg-pink-500 text-white px-6 py-2 text-sm font-semibold rounded-full inline-block">
@@ -21,7 +21,7 @@ const Home = () => {
  
 </span>
 
-        <h1 className="text-6xl font-bold">
+        <h1 className="text-5xl sm:text-5xl md:text-6xl font-bold">
          Ankit Yadav 
         </h1>
 
@@ -38,7 +38,7 @@ const Home = () => {
         </div>
 
        
-        <div className="flex gap-6 text-xl mt-4">
+        <div className=" tflex justify-center md:justify-start gap-6 text-xl mt-4">
           
          <a href="https://www.linkedin.com/in/ankit-webdev/" target="_blank" rel="noreferrer"
           className="text-2xl  hover:scale-140 transition-all duration-300">

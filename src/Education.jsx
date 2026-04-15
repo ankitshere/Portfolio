@@ -50,7 +50,7 @@ const Education = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="min-h-screen  py-20 px-6">
+    <section ref={sectionRef} className="min-h-screen  bg-gray-100 py-20 px-6">
 
       {/* Heading */}
       <div className="text-center mb-16">

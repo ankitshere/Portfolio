@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { LuLinkedin } from "react-icons/lu";
-
 
 
 const HireMe = () => {
@@ -12,6 +10,7 @@ const HireMe = () => {
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
+    
   };
 
   const handleSubmit = (e) => {
@@ -22,13 +21,14 @@ const HireMe = () => {
     const whatsappURL = `https://wa.me/919369941973?text=${text}`;
 
     window.open(whatsappURL, "_blank");
+   
   };
 
   return (
-    <section className="min-h-screen bg-[#f8fafc] text-black px-6 md:px-20 py-20">
+    <section className="min-h-screen bg-gray-100 text-black px-6 md:px-20 py-20">
       
       {/* Heading */}
-      <div className="mb-5">
+      <div className="mb-2  w-fit">
         <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-blue-600 via-purple-900 to-sky-100 underline">
           Get In Touch
         </h2>
@@ -47,14 +47,14 @@ const HireMe = () => {
             <p>
               Email <br />
               <span className="text-black font-medium">
-                ankityadavpvs@gmail.com
+                ✉️ ankityadavpvs@gmail.com
               </span>
             </p>
 
             <p>
               Phone <br />
               <span className="text-black font-medium">
-                +91 9369941973
+                📞  +91 9369941973
               </span>
             </p>
           </div>
