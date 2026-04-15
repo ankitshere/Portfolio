@@ -22,11 +22,11 @@ const Nav = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="w-full   backdrop-blur-sm bg-white/20 fixed top-0 left-0 z-50">
-      <div className="flex items-center justify-between px-6 md:px-10 py-4">
+    <nav className="w-full   backdrop-blur-sm bg-white/20  fixed top-0 left-0 z-50">
+      <div className="flex items-center justify-between px-6 md:px-20  py-4">
 
         {/* Logo */}
-        <h1 className="text-2xl md:text-3xl font-bold">
+        <h1 className="text-2xl md:text-3xl  font-bold">
           Ankit's{" "}
           <span className="font-light text-gray-500 text-xl">
             Portfolio
@@ -34,7 +34,7 @@ const Nav = () => {
         </h1>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex gap-10 text-lg font-medium">
+        <div className="hidden md:flex gap-10   md:gap-15 text-lg font-medium">
 
           {["/", "/about", "/work", "/hireme"].map((path, i) => {
             const labels = ["Home", "About", "Work", "Hire Me"];
@@ -67,7 +67,7 @@ const Nav = () => {
 
       {/* Mobile Dropdown */}
       {menuOpen && (
-        <div className=" flex flex-col items-center gap-6 py-6 shadow-lg text-lg font-medium backdrop-blur-sm bg-white/20 backdrop-filter
+        <div className=" flex flex-col items-center gap-6 py-6 shadow-lg text-lg font-medium  backdrop-blur-sm bg-white/20 backdrop-filter
 ">
 
           {["/", "/about", "/work", "/hireme"].map((path, i) => {
