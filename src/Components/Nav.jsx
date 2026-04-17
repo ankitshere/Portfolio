@@ -22,7 +22,7 @@ const Nav = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="w-full   backdrop-blur-sm bg-white/20  fixed top-0 left-0 z-50">
+    <nav className="w-full   backdrop-blur-sm bg-white/10  fixed top-0 left-0 z-50">
       <div className="flex items-center justify-between px-6 md:px-20  py-4">
 
         {/* Logo */}
@@ -56,7 +56,7 @@ const Nav = () => {
         </div>
 
         {/* Mobile Menu Icon */}
-        <div className="md:hidden font-bold text-2xl">
+        <div className="md:hidden   font-bold text-2xl">
           {menuOpen ? (
             <RiCloseLine onClick={() => setMenuOpen(false)} />
           ) : (
@@ -67,7 +67,7 @@ const Nav = () => {
 
       {/* Mobile Dropdown */}
       {menuOpen && (
-        <div className=" flex flex-col items-center gap-6 py-6 shadow-lg text-lg font-medium  backdrop-blur-sm bg-white/20 backdrop-filter
+        <div className=" flex flex-col items-center gap-6 py-6 shadow-lg text-lg font-medium  
 ">
 
           {["/", "/about", "/work", "/hireme"].map((path, i) => {
