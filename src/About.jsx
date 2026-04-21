@@ -34,7 +34,7 @@ const About = () => {
   rel="noopener noreferrer"
   className='w-fit bg-pink-500 hover:bg-pink-600 text-white font-semibold px-7 py-3 rounded-full flex items-center ml-25 md:ml-0 gap-2 transition-all hover:scale-105 cursor-pointer'
 >
-  Download CV <i className="ri-download-line"></i>
+   View resume <i className="ri-download-line"></i>
 </a>
 </div>
  
