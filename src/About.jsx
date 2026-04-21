@@ -28,9 +28,14 @@ const About = () => {
     <span className='border border-pink-500  font-semibold px-4 py-1.5 rounded-full'>Tailwind CSS</span>
     <span className='border border-pink-500 font-semibold   px-4 py-1.5 rounded-full'>GSAP</span>
   </div>  
-  <button className='w-fit bg-pink-500 hover:bg-pink-600 text-white font-semibold px-7 py-3 rounded-full flex items-center ml-25 md:ml-0 gap-2 transition-colors'>
-    Download CV<i class="ri-download-line"></i>
-  </button>
+ <a 
+  href="https://drive.google.com/uc?export=download&id=1mBFKcvJPtYD4niDvb77D_3jURhNGLk7b"
+  target="_blank"
+  rel="noopener noreferrer"
+  className='w-fit bg-pink-500 hover:bg-pink-600 text-white font-semibold px-7 py-3 rounded-full flex items-center ml-25 md:ml-0 gap-2 transition-all hover:scale-105 cursor-pointer'
+>
+  Download CV <i className="ri-download-line"></i>
+</a>
 </div>
  
     </div>
