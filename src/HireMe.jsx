@@ -76,7 +76,14 @@ const HireMe = () => {
 >
   <i className="ri-github-fill"></i>
 </a>
-        
+        <a 
+  href="https://drive.google.com/uc?export=download&id=1mBFKcvJPtYD4niDvb77D_3jURhNGLk7b"
+  target="_blank"
+  rel="noopener noreferrer"
+  className='w-fit  bg-linear-to-r text-white from-blue-500 via-purple-500 to-blue-500 font-semibold px-2 rounded-full flex items-center ml-5 md:ml-0 gap-2 transition-all hover:scale-105 cursor-pointer'
+>
+   View resume <i className="ri-download-line"></i>
+</a>
         </div>
           </div>
         </div>
