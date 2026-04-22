@@ -95,7 +95,7 @@ const Work = () => {
               </div>
 
               {/* Year */}
-              <div className="absolute top-2 right-2 bg-gray-900/80 text-white text-[10px] px-2 py-0.5 rounded">
+              <div className="absolute top-2 right-2 bg-gray-600/80 text-white text-[10px] px-2 py-0.5 rounded">
                 {project.year}
               </div>
             </div>
@@ -107,11 +107,9 @@ const Work = () => {
                 {project.title}
               </h3>
 
-              <p className="text-[11px] sm:text-xs text-gray-700 mb-1 line-clamp-2">
-                {project.desc}
-              </p>
+             
 
-              <p className="text-[12px] font-semibold text-gray-600 mb-2 line-clamp-5">
+              <p className="text-[13px]  text-gray-600  mb-2 line-clamp-5">
                 {project.Features}
               </p>
 
