@@ -111,7 +111,7 @@ const Work = () => {
                 {project.desc}
               </p>
 
-              <p className="text-[10px] font-semibold text-gray-600 mb-2 line-clamp-2">
+              <p className="text-[12px] font-semibold text-gray-600 mb-2 line-clamp-5">
                 {project.Features}
               </p>
 
