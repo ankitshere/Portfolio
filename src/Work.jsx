@@ -8,7 +8,7 @@ const projects = [
     title: "MyCookify",
     desc: "A modern recipe web app to discover, create, and save recipes with a smooth user experience",
     Features:
-      "Search recipes by ingredients, create & share your own recipes, save favorites, and explore new recipes.",
+      "A modern recipe web application that allows users to search, create, and save recipes with a smooth and responsive user experience..",
     tech: ["React.js", "Tailwind CSS"],
     year: "2026",
     img: mycookifyImg,
@@ -19,7 +19,7 @@ const projects = [
     title: "GitHub Dev Finder",
     desc: "Explore GitHub profiles with real-time data.",
     Features:
-      "Search recipes by ingredients, create & share your own recipes, save favorites, and explore new recipes.",
+      "A GitHub profile explorer built with React and GitHub API that fetches real-time user data including repositories, followers, and profile insights with a clean and responsive UI..",
     tech: ["React", "GitHub API"],
     year: "2026",
     img: githubImg,
@@ -111,7 +111,7 @@ const Work = () => {
                 {project.desc}
               </p>
 
-              <p className="text-[10px] text-gray-500 mb-2 line-clamp-2">
+              <p className="text-[10px] font-semibold text-gray-600 mb-2 line-clamp-2">
                 {project.Features}
               </p>
 
