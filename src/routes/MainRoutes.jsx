@@ -8,27 +8,27 @@
 // const MainRoutes = () => {
 //   return (
 //     <Routes>
-       
+
 //         <Route path="/" element={<Home />} />
 //         <Route path="/about" element={<About/>} />
 //         <Route path="/work" element={<Work />} />
 //         <Route path="/hireme" element={<HireMe />} />
-      
+
 //     </Routes>
 //   )
 // }
 
 // export default MainRoutes
 
-import { Route, Routes } from 'react-router-dom'
-import Home from '../Home'
+import { Route, Routes } from "react-router-dom";
+import Home from "../pages/Home";
 
 const MainRoutes = () => {
   return (
     <Routes>
       <Route path="*" element={<Home />} />
     </Routes>
-  )
-}
+  );
+};
 
-export default MainRoutes
+export default MainRoutes;
