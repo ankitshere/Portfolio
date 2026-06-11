@@ -24,13 +24,13 @@ const Home = () => {
 
           <div className="space-y-2  font-semibold ">
             <p>
-              <i class="ri-phone-fill"></i> &nbsp;+91 9369941973
+              <i className="ri-phone-fill"></i> &nbsp;+91 9369941973
             </p>
             <p>
-              <i class="ri-mail-ai-fill"></i> &nbsp; ankityadavpvs@gmail.com
+              <i className="ri-mail-ai-fill"></i> &nbsp; ankityadavpvs@gmail.com
             </p>
             <p>
-              <i class="ri-map-pin-2-fill"></i> &nbsp; Lucknow ,Uttar Pradesh
+              <i className="ri-map-pin-2-fill"></i> &nbsp; Lucknow ,Uttar Pradesh
               India
             </p>
           </div>
@@ -58,7 +58,7 @@ const Home = () => {
               rel="noopener noreferrer"
               className="text-2xl  hover:scale-140 transition-all duration-300"
             >
-              <i class="ri-twitter-x-line"></i>
+              <i className="ri-twitter-x-line"></i>
             </a>
             <a
               href="https://www.instagram.com/codeby_ankitt/?hl=en"
@@ -66,7 +66,7 @@ const Home = () => {
               rel="noopener noreferrer"
               className="text-2xl  hover:scale-140  transition-all duration-300"
             >
-              <i class="ri-instagram-line"></i>
+              <i className="ri-instagram-line"></i>
             </a>
           </div>
         </div>
