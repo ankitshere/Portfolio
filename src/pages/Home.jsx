@@ -2,7 +2,6 @@ import React from "react";
 import About from "../pages/About";
 import Work from "../pages/Work";
 import HireMe from "../pages/HireMe";
-import Profileimg from "../images/Profileimg.jpeg";
 
 const Home = () => {
   return (
@@ -71,15 +70,19 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Right Image */}
+
 
         <div className="md:relative relative   mb-20">
-          <div className="md:w-[350px] md:h-[350px] w-[300px] h-[300px] rounded-full bg-gray-200 flex items-center justify-center">
-            <div className="md:w-[300px] md:h-[300px]  w-[250px] h-[250px] rounded-full bg-gray-300 flex items-center justify-center overflow-hidden">
-              {/* Replace with your image */}
-              <div className=" md:w-[260px] md:h-[260px] w-[210px] h-[210px] rounded-full  flex items-center justify-center overflow-hidden">
-                <img src={Profileimg} alt="" />
-                {/* Replace with your image */}
+          <div className="md:w-87.5 md:h-87.5 w-75 h-75 rounded-full bg-gray-200 flex items-center justify-center">
+            <div className="md:w-75 md:h-75  w-62.5 h-62.5 rounded-full bg-gray-300 flex items-center justify-center overflow-hidden">
+   
+
+             <img src="metaimg.jpeg" alt="" />
+
+
+              <div className=" md:w-65 md:h-65 w-52.5 h-52.5 rounded-full  flex items-center justify-center overflow-hidden">
+              
+               
               </div>
             </div>
           </div>

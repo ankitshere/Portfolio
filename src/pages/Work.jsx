@@ -68,7 +68,7 @@ const Work = () => {
               <img
                 src={project.img}
                 alt={project.title}
-                className="w-full h-[140px] sm:h-[160px] md:h-[170px] object-cover transition duration-500 group-hover:scale-105"
+                className="w-full h-35 sm:h-40 md:h-42.5 object-cover transition duration-500 group-hover:scale-105"
               />
 
               {/* Overlay Buttons */}
